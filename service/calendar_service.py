@@ -200,7 +200,7 @@ def updateEvent(service):
         return
 
     try: 
-        index = int(input())
+        index = int(input("Enter the index of the event to update: "))
         if 0 <= index < len(events):
             event_id = events[index]['id']
             print("Updating event, leave blank any fields that you do not need to update. ")

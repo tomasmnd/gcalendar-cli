@@ -1,4 +1,3 @@
-
 # gcalendar-cli
 
 A simple but effective CLI that allows you to access your Google Calendar and operate from a command line.
@@ -26,18 +25,14 @@ python app.py
 
 # Usage
 
-`event`             Retrieves your nearest upcoming event.
-`events`            Lists your next 10 upcoming events.
-`week`              Shows all events for the upcoming week.
-`create`            Allows you to create a new event.
-`delete`            Deletes an event based on index.
-`update`            Updates an existing event based on index.
-`exit`              Exits the CLI.
+event             Retrieves your nearest upcoming event.
+events            Lists your next 10 upcoming events.
+week              Shows all events for the upcoming week.
+create            Allows you to create a new event.
+delete            Deletes an event based on index.
+update            Updates an existing event based on index.
+exit              Exits the CLI.
 
-
-The event will be created in your Google Calendar with the specified details.
-
-##Create
 ## Create
 
 Running the command `create` will prompt you to enter the following attributes to create a new event:
@@ -65,6 +60,7 @@ Example prompt:
 ```python
 What i can i help you with? update
 ```
+
 ```python
 *** Upcoming Events *** 
 Index   Date                      Summary               Description 
@@ -74,15 +70,27 @@ Index   Date                      Summary               Description
 ```
 
 ```python
-Enter event summary: Team Meeting 
-Enter event description: Discuss project milestones 
-Enter start date (YYYY-MM-DD): 2024-09-15 
-Enter start time (HH, 24-hour format): 10:00 
-Enter end date (YYYY-MM-DD): 2024-09-15 
-Enter end time (HH, 24-hour format): 11:00
+Enter the index of the event to update: 0
 ```
 
-##Delete
+```python
+Enter event summary: New project Meeting 
+Enter event description: Discuss the new project logic 
+Enter start date (YYYY-MM-DD):
+Enter start time (HH, 24-hour format): 10:00 
+Enter end date (YYYY-MM-DD):
+Enter end time (HH, 24-hour format): 13:00
+```
+
+```python
+*** Upcoming Events *** 
+Index   Date                      Summary               Description 
+0       2024-09-15T13:00:00Z      New project Meeting   Discuss the new project logic 
+1       2024-09-16T14:00:00Z      Doctor's Appointment  Annual check-up 
+2       2024-09-17T09:00:00Z      Team Sync             Weekly team synchronization
+```
+
+## Delete
 
 Running the command `delete` will prompt you to select an event to delete by its index from the list of upcoming events. The list of events will be displayed as follows:
 
