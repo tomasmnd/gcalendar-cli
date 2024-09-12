@@ -85,7 +85,7 @@ Enter end time (HH, 24-hour format): 13:00
 ```python
 *** Upcoming Events *** 
 Index   Date                      Summary               Description 
-0       2024-09-15T13:00:00Z      New project Meeting   Discuss the new project logic 
+0       2024-09-15T10:00:00Z      New project Meeting   Discuss the new project logic 
 1       2024-09-16T14:00:00Z      Doctor's Appointment  Annual check-up 
 2       2024-09-17T09:00:00Z      Team Sync             Weekly team synchronization
 ```
